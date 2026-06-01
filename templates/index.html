@@ -1,28 +1,105 @@
-<!DOCTYPE html><html>
+<!DOCTYPE html>
+<html>
 <head>
     <title>AI Mock Interview Platform</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            width: 80%;
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+        }
+
+        h1{
+            text-align: center;
+            color: #333;
+        }
+
+        label{
+            font-weight: bold;
+            color: #444;
+        }
+
+        textarea{
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+        }
+
+        input[type="file"]{
+            margin-top: 10px;
+        }
+
+        button{
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover{
+            background: #0056b3;
+        }
+
+        .footer{
+            text-align: center;
+            margin-top: 20px;
+            color: gray;
+        }
+
+    </style>
+
 </head>
-<body><h1>AI Mock Interview Platform</h1><form method="POST" enctype="multipart/form-data"><label>Upload Resume (PDF)</label>
-<br><br>
+<body>
 
-<input type="file" name="resume">
+    <div class="container">
 
-<br><br>
+        <h1>🎯 AI Mock Interview Platform</h1>
 
-<label>Paste Job Description</label>
-<br><br>
+        <form method="POST" enctype="multipart/form-data">
 
-<textarea name="jd" rows="10" cols="70"></textarea>
+            <label>Upload Resume (PDF)</label>
+            <br><br>
 
-<br><br>
+            <input type="file" name="resume">
 
-<button type="submit">
-    Generate Questions
-</button>
+            <br><br>
 
-</form>{% if questions %}
+            <label>Paste Job Description</label>
+            <br><br>
 
-<hr><h2>Generated Interview Questions</h2><pre>{{ questions }}</pre>{% endif %}
+            <textarea name="jd" rows="8" placeholder="Paste Job Description Here"></textarea>
+
+            <br><br>
+
+            <button type="submit">
+                Generate Interview Questions
+            </button>
+
+        </form>
+
+        <div class="footer">
+            Built using Python, Flask & AI
+        </div>
+
+    </div>
 
 </body>
 </html>
