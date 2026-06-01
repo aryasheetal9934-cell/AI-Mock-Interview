@@ -39,6 +39,10 @@ Team
 
 Sheetal Arya 
 
+## 🎥 Demo Video
+Click here to watch demo:
+https://youtu.be/YGkjWLHsmQw
+
 Run Locally
 
 pip install flask
