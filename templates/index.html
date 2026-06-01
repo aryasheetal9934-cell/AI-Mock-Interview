@@ -1,0 +1,28 @@
+<!DOCTYPE html><html>
+<head>
+    <title>AI Mock Interview Platform</title>
+</head>
+<body><h1>AI Mock Interview Platform</h1><form method="POST" enctype="multipart/form-data"><label>Upload Resume (PDF)</label>
+<br><br>
+
+<input type="file" name="resume">
+
+<br><br>
+
+<label>Paste Job Description</label>
+<br><br>
+
+<textarea name="jd" rows="10" cols="70"></textarea>
+
+<br><br>
+
+<button type="submit">
+    Generate Questions
+</button>
+
+</form>{% if questions %}
+
+<hr><h2>Generated Interview Questions</h2><pre>{{ questions }}</pre>{% endif %}
+
+</body>
+</html>
