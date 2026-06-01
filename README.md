@@ -37,7 +37,7 @@ Future Enhancements
 
 Team
 
-Sheetal Arya and Team
+Sheetal Arya 
 
 Run Locally
 
